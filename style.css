@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    margin: auto;
+}
+
+.mobile{
+    display: none;
+}
+.imgs{
+    width: 100%;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    transition: all 0.4s;
+}
+svg path{
+    transition: all 0.4s;
+}
+p{
+    line-height: 32px;
+    color: hsl(229, 8%, 60%);
+}
+h1, h2, h3, h4{
+    color: hsl(229, 31%, 21%);
+}
+h1{
+    font-size: 45px;
+}
+button{
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.opt-prop{
+    padding-bottom: 1.30rem;
+    border-bottom: 4px solid hsl(0, 94%, 66%);
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.col svg path{
+    stroke: hsl(0, 94%, 66%);
+}
+#open-btn, #close-btn{
+    cursor: pointer;
+}
+.simp{
+    padding-bottom: 1.30rem;
+    border-bottom: 4px solid hsl(0, 94%, 66%);
+}
+.label-error{
+    border-color: red;
+}
+
+
+header{
+    position: relative;
+}
+.menu-content {
+    position: absolute;
+    width: 100%;
+    margin: auto 0;
+    z-index: 99;
+    top: 0;
+}
+.menu{
+    background-color: hsl(229, 31%, 21%);
+    padding: 2.5rem 1.5rem;
+    opacity: 0.8;
+}
+.menu nav{
+    padding:.5rem 0;
+}
+.menu-links a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+}
+.menu-links{
+    margin-top: 3rem;
+    line-height: 45px;
+    text-align: center;
+}
+.menu-login-btn{
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: hsl(229, 31%, 21%);
+    padding: .75rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+.menu .social-links{
+    text-align: center;
+    margin: 8rem auto 10rem auto;
+}
+.menu hr{
+    height: 1px;
+    background-color: hsl(229, 8%, 60%);
+}
+
+nav, .nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    padding: 3rem 6rem 5rem 6rem;
+}
+.nav-links a{
+    text-transform: uppercase;
+    color: hsl(229, 8%, 60%);
+    font-size: 14px;
+    font-weight: 500;
+}
+.pricing{
+    margin: auto 2rem;
+}
+.login-btn{
+    text-transform: uppercase;
+    padding: .5rem 1.5rem;
+    background-color: hsl(0, 94%, 66%);
+    border:2px solid hsl(0, 94%, 66%);
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+.login-btn:hover{
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+}
+.get-chrome, .get-firefox{
+    padding: .7rem 1rem;  
+    border-radius: 5px;
+    font-weight: 600;
+}
+.get-firefox{
+    color: hsl(229, 8%, 60%);
+    background-color: whitesmoke;
+    border:2px solid whitesmoke;
+    padding: .8rem 1rem;
+    margin-left: 0.5rem;
+}
+.get-firefox:hover{
+    background-color: white;
+    border-color: hsl(229, 31%, 21%);
+    color: hsl(229, 31%, 21%);
+}
+.get-chrome{
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    border:2px solid hsl(231, 69%, 60%);
+    margin-right: .5rem;
+}
+.get-chrome:hover{
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+}
+.illustration{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.illus-texts{
+    padding: 1rem 0rem 3rem 6rem;
+    width: 50%;
+    margin-right: 4rem;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feat-texts{
+    text-align: center;
+    padding: 1.25rem;
+    width: 45%;
+}
+.feat-options{
+    text-align: center;
+    padding: 1.25rem;
+    width: 60%;
+    font-weight: 500;
+    cursor: pointer;
+}
+.feat-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.options .speedy{
+    margin: auto 4rem;
+}
+.feat-option-img{
+    width: 50%;
+    margin: 2rem 3rem 2rem 6rem;
+}
+.feat-option-texts{
+    width: 50%;
+    margin: 2rem 6rem 2rem 3rem;
+}
+.more-info-btn, .faq-more-btn{
+    padding: .6rem .75rem;
+    border-radius: 5px;
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    border:2px solid hsl(231, 69%, 60%);
+    font-weight: 600;
+}
+.more-info-btn:hover, .faq-more-btn:hover, .add-install-btn:hover{
+    color: hsl(231, 69%, 60%);
+    background-color: white;
+}
+.simple, .speedy, .easy{
+    transition: all 0.4s;
+}
+.simple:hover, .speedy:hover, .easy:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+.feat-options.mobile hr{
+    margin-top: -1.2rem;
+}
+
+.extensions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 6rem 5rem 6rem;
+}
+.ext-head{
+    width: 50%;
+    margin-bottom: 4rem;
+}
+.ext-options{
+    display: flex;
+    justify-content: space-between;
+}
+.ext-option{
+    border-radius: 12px;
+    padding: 2rem 0;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.25);
+    height: fit-content;
+}
+.firefox{
+    margin: 2.5rem 2.5rem auto 2.5rem;
+}
+.opera{
+    margin-top: 5rem;
+}
+.add-install-btn{
+    font-weight: 600;
+    padding: .6rem 1.5rem;
+    border-radius: 5px;
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+}
+.dots{
+    width: 100%;
+}
+.faq{
+    text-align: center;
+    margin: auto;
+    width: 45%;
+    padding: 1.5rem 1.25rem 5rem 1.25rem;
+}
+.faq-texts{
+    margin: 3.5rem auto 3rem auto;
+}
+.faq-ques{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    text-align: justify;
+    cursor: pointer;
+}
+.faq-ques:hover{
+    color: hsl(0, 94%, 66%);
+}
+.faq-ans{
+    margin-top: 2.5rem;
+    text-align: justify;
+}
+.faq-more-btn{
+    padding: .75rem 1.25rem;
+}
+.joined{
+    text-align: center;
+    background-color: hsl(231, 69%, 60%);
+    padding: 3rem;
+}
+.total-joined{
+    text-transform: uppercase;
+    color: white;
+    word-spacing: .4rem;
+    letter-spacing: .25rem;
+    font-size: 16px;
+}
+.stay{
+    color: white;
+}
+form{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    font-weight: 500;
+    padding: .75rem 1.5rem .6rem 1.5rem;
+    /* border-radius: 5px; */
+    color: hsl(229, 8%, 60%);
+    border: none;
+    width: 90%;
+    /* background-color: white;
+    border: 2px solid white; */
+}
+input:focus{
+    outline: none;
+}
+.label{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: .75rem 1.5rem .6rem 1.5rem; */
+    padding-right: 1.5rem;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid white; 
+}
+form button{
+    font-weight: 600;
+    padding: .725rem 1.5rem;
+    border-radius: 5px;
+    color: white;
+    background-color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+    margin-left: 1rem;
+}
+form button:hover{
+    color: hsl(0, 94%, 66%);
+    background-color: white;
+}
+
+footer{
+    background-color: hsl(229, 31%, 21%);
+    padding: 1rem 6rem;
+}
+.footer, .foot-logo-links, .foot-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot-links{
+    line-height: 45px;
+    margin-left: 3rem;
+}
+.foot-links a{
+    color: hsl(229, 8%, 60%);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+.white-logo path{
+    fill: white;
+}
+.social-links{
+    word-spacing: 2rem;
+}
+.social-links svg:hover path{
+    fill: hsl(0, 94%, 66%);
+}
+
+.nav-links a:hover, .foot-links a:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+@media screen and (max-width: 800px){
+    nav{
+        padding: 3rem 3rem 5rem 3rem;
+    }
+    .illus-texts{
+        padding: 1rem 0rem 3rem 3rem;
+        width: 50%;
+        margin-right: 2rem;
+    }
+    .options .speedy{
+        margin: auto 2rem;
+    }
+    .feat-texts{
+        width: 55%;
+    }
+    .feat-options{
+        width: 70%;
+    }
+    .extensions{
+        padding: 1rem 2rem 5rem 2rem;
+    }
+    .opt-img{
+        width: 60px;
+    }
+    .faq{
+        width: 65%;
+    }
+    footer{
+        padding: 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    h1{
+        font-size: 40px;
+    }
+
+    nav{
+        padding: 3rem 1.5rem 5rem 1.5rem;
+    }
+    .illustration{
+        flex-direction: column;
+        text-align: center;
+    }
+    .illus-texts{
+        padding: 1rem 1.25rem 3rem 1.25rem;
+        width: auto;
+        margin-right: 0;
+    }
+
+    .features{
+        align-items: normal;
+    }
+    .feat-texts{
+        padding: 1.25rem;
+        width: auto;
+    }
+    .feat-options{
+        padding: 1.25rem;
+        width: auto;
+    }
+    .feat-option{
+        flex-direction: column;
+        text-align: center;
+        padding: 3.5rem 0;
+    }
+    .feat-option-img{
+        padding: 0 2rem;
+        width: auto;
+        margin: 0;
+    }
+    .feat-option-texts{
+        padding: 1.25rem;
+        width: auto;
+        margin: 0;
+    }
+
+    .extensions{
+        padding: 1rem 1.25rem 5rem 1.25rem;
+    }
+    .ext-head{
+        width: auto;
+    }
+    .ext-options{
+        flex-direction: column;
+        align-items: center;
+    }
+    .firefox{
+        margin: 2.5rem auto;
+    }
+    .opera{
+        margin-top: 0;
+    }
+
+    .faq{
+        width: auto;
+        padding: 1.5rem 1.25rem 5rem 1.25rem;
+    }
+
+    .joined{
+        padding: 3rem 1.25rem;
+    }
+    form{
+        flex-direction: column;
+    }
+    .label{
+        width: 90%;
+    }
+    input{
+        width: 90%;
+    }
+    form button{
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    footer{
+        padding: 3rem 1.25rem;
+    }
+    .footer, .foot-logo-links, .foot-links{
+        text-align: center;
+        flex-direction: column;
+    }
+    .foot-links{
+        margin-left: 0;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
